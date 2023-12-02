@@ -1,4 +1,4 @@
-#fonksiyon_turleri.py
+# fonksiyon_turleri.py
 
 # tanımlama şekline göre fonksiyonlar
 # a. dahili(built-in) fonksiyonlar

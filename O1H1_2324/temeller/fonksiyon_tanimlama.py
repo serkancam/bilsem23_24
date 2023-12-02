@@ -35,3 +35,8 @@ print("aralık toplam2:",sum(range(0,1001,5)))
 import matplotlib.pyplot as plt
 import numpy as np
 
+x=np.array([3,5,8,1,10])
+y=np.array([10,20,30,40,50])
+
+plt.scatter(x,y)
+plt.show()

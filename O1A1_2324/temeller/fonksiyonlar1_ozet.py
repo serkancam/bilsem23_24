@@ -7,14 +7,14 @@ a=int(input("sayi:"))
 b=int(input("sayi:"))
 c=int(input("sayi:"))
 
-ek=min(a,b,c) # fonksiyonmda virgül ile ayrılan değerlere, argüman/parametre
+ek=min(a,b,c) # fonksiyonda virgül ile ayrılan değerlere, argüman/parametre
 eb=max(b,c,a)
 fark=eb-ek
 
 print(f"en büyük:{eb}, en küçük:{ek}, fark:{fark}")
 
 # 3. parti fonksiyonlar: import komutu ile koda eklenir.
-
+# sudo pip3 install numpy matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
