@@ -46,3 +46,6 @@ for i in range(len(isimler)):
     kilo=float(input(f"{isimler[i]} kilosu:"))
     kilolar.append(kilo)
     
+print(kilolar)
+
+maaslar=(30,20,40)
