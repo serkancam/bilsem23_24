@@ -23,6 +23,7 @@ __pycache__/
 *.avi
 *.mp3
 *.pdf
+*.o
 
 # Distribution / packaging
 .Python
