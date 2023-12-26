@@ -48,7 +48,7 @@ print(boylar)
 
 bkiler=[]
 
-for 3 in range(len(isimler)):
+for i in range(len(isimler)):
     bki=kilolar[i]/(boylar[i]**2)
     bkiler.append(bki)
     

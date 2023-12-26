@@ -1,9 +1,3 @@
-def adam_asmaca1():
-    print("  0  ")
-    print(" /|\ ")
-    print("  |  ")
-    print(" / \ ")
-    
 def cop_adam_ciz(deger:int):
     if deger==1:
         print("  0  ")
@@ -34,5 +28,5 @@ def cop_adam_ciz(deger:int):
         print(" / \ ")
 
 if __name__=="__main__":
-    deger=int(input("adet:"))
+    deger = int(input("deger:"))
     cop_adam_ciz(deger)
