@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-yakalama=cv2.VideoCapture("goruntu_isleme/images/hareket3.mp4")
+yakalama=cv2.VideoCapture(0)
 
 d1,eski_resim=yakalama.read()
 d2,yeni_resim=yakalama.read()
