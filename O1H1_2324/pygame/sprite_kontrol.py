@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from typing import Any
+
 import pygame
 import random
 
@@ -72,16 +72,32 @@ class Kursun(pygame.sprite.Sprite):
         if self.rect.bottom<0:
             self.kill()
         
-    
-        
-        
-        
-        
+class Meteor(pygame.sprite.Sprite):
+    def __init__(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.image=pygame.Surface([30,30])
+        self.image.fill(KIRMIZI)
+        self.rect=self.image.get_rect()
+        self.rect.x=random.randint(5,GENISLIK-self.rect.width)
+        self.rect.bottom=0
+        self.y_hizi=random.randint(2,10)
+    def update(self):
+        self.rect.y += self.y_hizi
+        if self.rect.top>=YUKSEKLIK:
+            self.rect.x=random.randint(5,GENISLIK-self.rect.width)
+            self.rect.bottom=0
+            self.y_hizi=random.randint(2,10)
+       
        
 # sprite grupları tanımlama ve nesne ekleme
 hepsi = pygame.sprite.Group() 
 kursunlar = pygame.sprite.Group()
 meteorlar = pygame.sprite.Group()
+
+for i in range(5):
+    m=Meteor()
+    hepsi.add(m)
+    meteorlar.add(m)
 
 oyuncu1=Oyuncu(GENISLIK//2,YUKSEKLIK-30)   
 
@@ -104,6 +120,20 @@ while calisma:
 
     # Güncelleme
     hepsi.update()
+    #kurşunlşardan meteorlar ile çarpışan var mı(hit)?
+    vurma = pygame.sprite.groupcollide(meteorlar,kursunlar,True,True)
+    for durum in vurma:
+        m=Meteor()
+        hepsi.add(m)
+        meteorlar.add(m)
+    
+    # gemi ile meteorlar çarpışmış mı?
+    bitis = pygame.sprite.spritecollide(oyuncu1,meteorlar,False)
+    if bitis:
+        print("oyun bitti.")
+        calisma=False
+        
+    
     # Çizme / Ekranı tazeleme
     ekran.fill(BEYAZ)
     hepsi.draw(ekran)

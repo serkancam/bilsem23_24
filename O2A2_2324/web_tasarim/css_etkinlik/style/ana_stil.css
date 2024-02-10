@@ -1,0 +1,51 @@
+#tasiyici
+{
+    width: 1010px;
+    height: auto;
+    padding: 5px;
+    margin: auto;
+    background-color: #CCC;
+}
+#baslik
+{
+    width: 990px;
+    padding: 10px;
+    margin-bottom: 5px;
+    height: 90px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    background-color:ghostwhite;
+}
+#menu
+{
+    width: 1010px;
+    padding: 0px;
+    margin-bottom: 5px;
+    background-color: rgb(216, 210, 171);
+    height: 25px;
+}
+#sol_menu
+{
+    width: 285px;
+    padding: 5px;
+    background-color: burlywood;
+    margin: 0px 0px 5px 5px;
+    float: left;
+}
+#icerik
+{
+    width: 700px;
+    padding: 5px;
+    background-color: darksalmon;
+    margin: 0px 0px 5px 5x;
+    float: left;
+}
+#ayak
+{
+    clear: both;
+    width: 1000px;
+    height: 75px;
+    padding: 5px;
+    background-color: bisque;
+}
