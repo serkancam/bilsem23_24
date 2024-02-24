@@ -1,0 +1,68 @@
+#header
+{
+    background-color:chocolate;
+    width: 790px;
+    height: 100px;
+    padding: 4px ;
+    border-width: 1px ;
+    border-color: black;
+    border-style: solid;
+    font-family: monospace;
+    font-size:larger;
+      
+}
+
+#menu
+{
+    background-color:rgb(222, 30, 105);
+    margin-top: 5px;
+    width: 790px;
+    height: 30px;
+    padding: 4px ;
+    border-width: 1px ;
+    border-color: black;
+    border-style: solid;  
+
+}
+#left_menu
+{
+    background-color:rgb(222, 30, 105);
+    margin-top: 5px;
+    width: 280px;
+    height: 30px;
+    padding: 4px ;
+    border-width: 1px ;
+    border-color: black;
+    border-style: solid;
+    float: left; 
+
+}
+#content
+{
+    background-color:rgb(222, 30, 105);
+    margin-top: 5px;
+    width: 490px;
+    margin-left: 10px;
+    height: 30px;
+    padding: 4px ;
+    border-width: 1px ;
+    border-color: black;
+    border-style: solid;
+    float: left;
+
+}
+#footer
+{
+    clear: both;
+    background-color:rgb(222, 30, 105);
+    margin-top: 25px;
+    width: 790px;
+    height: 30px;
+    padding: 4px ;
+    border-width: 1px ;
+    border-color: black;
+    border-style: solid;
+    
+   
+
+}

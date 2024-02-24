@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from datetime import datetime as dt
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 state1,f_eski=cap.read()
 state2,f_yeni=cap.read()
 fw=int(cap.get(3))

@@ -1,0 +1,53 @@
+#tasiyici
+{
+    width: 900px;
+    height: 1500px;
+  
+   
+}
+body
+{
+    background-image: linear-gradient(red,yellow);
+}
+#menum ul
+{
+    list-style: None;
+    padding: 0px;
+    margin: 0px;
+}
+#menum li
+{
+    width: 170px;
+    position: relative;
+    float: left;
+}
+#menum li ul
+{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+}
+#menum ul li a
+{
+  text-decoration: none;
+  background-color: rgb(3, 119, 119);
+  color: rgb(255,255, 255);
+  display: block;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 2px;
+  font-size: 14pt;
+  margin-bottom: 3px;
+  margin-right: 3px;
+
+}
+#menum ul li a:hover 
+{
+    background-color: black;
+}
+#menum li:hover ul
+{
+    display: block;
+}
