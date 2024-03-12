@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        #secici
+        {
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            padding-left: 10px;
+            padding-top: 10px;
+       
+        }
+        a
+        {
+            color: aliceblue;
+            text-decoration: none;
+            border-color: aliceblue;
+            border-width: 1px;
+            border-style: solid;
+           
+        }
+    
+    </style>
+
+    <script type="text/javascript">
+
+        function degistir(renk)
+        {
+            document.bgColor=renk;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <div id="secici">
+        <a href="#" id="kirmizi" onmouseover="degistir('#FF0000')">Kırmızı</a> <br>
+        <a href="#" id="yesil" onclick="degistir('#00FF00')">Yeşil</a> <br>
+        <a href="#" id="mavi" ondblclick="degistir('#0000FF')">Mavi</a>        
+    </div>
+    
+</body>
+</html>

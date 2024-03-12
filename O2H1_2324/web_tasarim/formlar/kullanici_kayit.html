@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #divim
+        {
+            background-color: aqua;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin: auto;
+            border: 5px ridge #360000;
+            border-radius: 10px;
+        }
+        .soltd
+        {
+            background-color: rgb(238, 178, 100);
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+            border: 2px solid #360000;
+        }
+        .sagtd
+        {
+            background-color: rgb(238, 100, 118);
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+            border: 2px solid #360000;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="divim">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td class="soltd">
+                        Adı:
+                    </td>
+                    <td class="sagtd">
+                        <input type="text" name="k_adi" id="k_adi">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        e-posta:
+                    </td>
+                    <td class="sagtd">
+                       <input type="email" name="k_posta" id="k_posta">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        Şifre:
+                    </td>
+                    <td class="sagtd">
+                        <input type="password" name="k_sifre1" id="k_sifre1">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        Şifre tekrar
+                    </td>
+                    <td class="sagtd">
+                        <input type="password" name="k_sifre2" id="k_sifre2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        Ev adresi:
+                    </td>
+                    <td class="sagtd">
+                        <textarea name="k_adres" id="k_adresi" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        Medeni Hal:
+                    </td>
+                    <td class="sagtd">
+                        <input type="radio" name="k_medeni" id="k_medeni" value="bekar" checked="checked"> bekar
+                        <input type="radio" name="k_medeni" id="k_medeni" value="evli">Evli
+                    </td>
+                </tr>
+                <tr>
+                    <td class="soltd">
+                        <input type="reset" value="Temizle">
+                    </td>
+                    <td class="sagtd">
+                        <input type="submit" value="Gönder">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

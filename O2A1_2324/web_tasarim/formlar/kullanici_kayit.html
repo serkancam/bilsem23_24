@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .sol {
+            background-color: burlywood;
+            height: auto;
+            width: 100px;
+            padding: 5px;
+            border: 2px solid #000;
+        }
+
+        .sag {
+            background-color: chocolate;
+            height: auto;
+            width: 300px;
+            border: 2px ridge #000;
+            padding: 5px;
+        }
+
+        #govde {
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            background-color: aqua;
+            border: 5px dotted #3f042d;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="govde">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td class="sol">
+                        Adı:
+                    </td>
+                    <td class="sag">
+                        <input type="text" name="k_adi" id="k_adi" maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        e-posta:
+                    </td>
+                    <td class="sag">
+                        <input type="email" name="k_eposta" id="k_eposta">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        Şifre
+                    </td>
+                    <td class="sag">
+                       <input type="password" name="k_pass1" id="k_pass2" minlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        şifre tekrar:
+                    </td>
+                    <td class="sag">
+                        <input type="password" name="k_pass2" id="k_pass2" minlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        Ev adresi:
+                    </td>
+                    <td class="sag">
+                        <textarea name="k_adres" id="k_adres" cols="30" rows="10">
+                            
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        Medeni Hal:
+                    </td>
+                    <td class="sag">
+                       <input type="radio" name="medeni" id="medeni" value="bekar" checked="checked">bekar
+                       <input type="radio" name="medeni" id="medeni" value="evli" >evli
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sol">
+                        <input type="reset" value="Temizle">
+                    </td>
+                    <td class="sag">
+                        <input type="submit" value="Gönder">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

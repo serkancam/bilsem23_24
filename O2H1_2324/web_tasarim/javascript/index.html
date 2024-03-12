@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #divim
+    {
+        background-color: black;
+        height: auto;
+        width: auto;
+        padding: 20px;
+    }
+    p
+    {
+        margin: 20px;
+        padding: 5px;
+      
+    }
+    a
+    {
+        text-decoration: none;
+        color: aliceblue;
+        border-width: 2px;
+        border-color: whitesmoke;
+        border-style: solid;
+        border-radius: 10px;
+        background-color: coral;
+        padding: 10px;        
+    }
+  </style>
+  <script type="text/javascript">
+    function degistir(renk)
+    {
+        document.getElementById("divim").style.backgroundColor=renk
+    }
+
+  </script>
+</head>
+<body>
+    <div id="divim">
+        <p><a href="#" onmouseover="degistir('#FF0000')" onmouseleave="degistir('#000000')">Kırmızı</a></p> 
+        <p><a href="#" onclick="degistir('#0000FF')">Mavi</a></p>
+        <p><a href="#" ondblclick="degistir('#00FF00')">Yeşil</a></p>       
+    </div>
+    
+</body>
+</html>
