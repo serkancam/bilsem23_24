@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-siniflandirici=cv2.CascadeClassifier("/home/serkan/Belgeler/bilsem23_24/O1A1_2324/goruntu_isleme/bolum2/haarcascade_eye_tree_eyeglasses.xml")
+siniflandirici=cv2.CascadeClassifier("goruntu_isleme/bolum2/haarcascade_smile.xml")
 cap = cv2.VideoCapture(0)
 while True:
     durum,cerceve=cap.read()

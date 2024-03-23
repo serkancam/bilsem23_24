@@ -10,6 +10,10 @@ while True:
     gri=cv2.cvtColor(cerceve,cv2.COLOR_BGR2GRAY)
     yuzler=yuz_bulucu.detectMultiScale(gri,1.1,27)
     for (x,y,w,h) in yuzler:
+        yuz=cerceve[y:y+h,x:x+w]
+        blurlu_yuz=cv2.GaussianBlur(yuz,(77,77),0.0)
+        cerceve[y:y+h,x:x+w]=blurlu_yuz
+        #cerceve[y:y+h,x:x+w]= cv2.GaussianBlur(cerceve[y:y+h,x:x+w],(37,37),0.0)
         cv2.rectangle(cerceve,(x,y),(x+w,y+h),(0,255,0),1)
     
     cv2.imshow("video",cerceve)
